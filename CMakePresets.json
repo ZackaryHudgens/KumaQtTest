@@ -7,9 +7,21 @@
             "description": "Using compilers: C = /usr/bin/gcc-13, CXX = /usr/bin/g++-13",
             "binaryDir": "${sourceDir}/build/${presetName}",
             "cacheVariables": {
-                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}",
                 "CMAKE_C_COMPILER": "/usr/bin/gcc-13",
                 "CMAKE_CXX_COMPILER": "/usr/bin/g++-13",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "GCC 12.5.0 x86_64-linux-gnu",
+            "displayName": "GCC 12.5.0 x86_64-linux-gnu",
+            "description": "Using compilers: C = /usr/bin/gcc-12, CXX = /usr/bin/g++-12",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}",
+                "CMAKE_C_COMPILER": "/usr/bin/gcc-12",
+                "CMAKE_CXX_COMPILER": "/usr/bin/g++-12",
                 "CMAKE_BUILD_TYPE": "Debug"
             }
         }
