@@ -4,7 +4,6 @@ project(KumaQtTest VERSION 0.1.0 LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(CMAKE_PREFIX_PATH "/home/teddy/Qt-build/")
 find_package(Qt6 REQUIRED COMPONENTS Core Widgets OpenGLWidgets)
 
 qt_standard_project_setup()
